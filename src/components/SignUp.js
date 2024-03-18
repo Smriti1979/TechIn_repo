@@ -3,12 +3,11 @@
 function SignUp(){
     return (
         <div>
-        <div className="SignUp-heading">
+        <div className='font-bold text-4xl'>
         <h1>Sign Up</h1>
         </div>
-            <div className="Block">
-            <form>
-            <div className='display:flex'>
+            <form className="mt-5">
+            <div className='flex justify-center'>
                 <div className="Username">
                     <label htmlFor="username">Username:</label>
                 </div>
@@ -16,7 +15,7 @@ function SignUp(){
                     <input type="text" id="username" name="username" />
                 </div>
             </div>
-            <div className="Email-Block">
+            <div className="flex justify-center">
                 <div className="Email">
                     <label htmlFor="email">Email:</label>
                 </div>
@@ -24,7 +23,7 @@ function SignUp(){
                     <input type="text" id="email" name="email" />
                 </div>
             </div>
-            <div className="Password-Block">
+            <div className="flex justify-center">
                 <div className="Password">
                     <label htmlFor="password">Password:</label>
                 </div>
@@ -37,7 +36,6 @@ function SignUp(){
             </div>
             </form>
             </div>
-        </div>
     );
 }
 
