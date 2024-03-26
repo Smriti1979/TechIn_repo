@@ -1,7 +1,7 @@
 import React from 'react';
 import LoginImage from '../Components/LoginImage';
 
-const Login = () => {
+const Page2Content = () => {
   return (
     <div className="grid grid-cols-2">
       {/* Picture */}
@@ -45,7 +45,7 @@ const Login = () => {
               </form>
               <div className='mt-10'>
                 <h2>Don't have an account?</h2>
-                <h2 className='mt-2 text-blue-500 text-1xl font-bold'>CREATE ACCOUNT</h2>
+                <h2 className='text-blue-500 text-1xl bold'>CREATE ACCOUNT</h2>
               </div>
           </div>
         </div>   
@@ -55,4 +55,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Page2Content;

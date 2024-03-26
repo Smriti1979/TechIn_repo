@@ -7,7 +7,6 @@ import CreateAccount from './Pages/CreateAccount';
 function App() {
   return (
     <div className="App">
-      <Login/>
       <CreateAccount/>
     </div>
   );
