@@ -1,7 +1,7 @@
 import React from 'react';
 import LoginImage from '../Components/LoginImage';
 
-const Page2Content = () => {
+const Login = () => {
   return (
     <div className="grid grid-cols-2">
       {/* Picture */}
@@ -10,9 +10,10 @@ const Page2Content = () => {
       </div>
 
       {/* Content Block */}
-      <div className=" h-screen bg-black flex justify-center items-center">
-        <div className='bg-white rounded-md px-60 pt-40 pb-40 rounded-lg'>
-          <h1 className='text-5xl font-bold text-center'>SIGN UP</h1>
+      <div className=" h-screen flex justify-center items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+        <div className='bg-white rounded-lg'>
+        <div className='p-20'>
+        <h1 className='text-5xl font-bold text-center'>LOGIN</h1>
           <div className='w-80'>
               <form className='flex flex-col mt-10'>
               <input
@@ -40,13 +41,18 @@ const Page2Content = () => {
               placeholder="Confirm Password"
               className="w-full py-2 px-4 mt-5 border border-gradient rounded-md focus:outline-none focus:border-black-500"
               />
-              <button className='text-2xl text-white rounded-lg pt-2 pb-2 mt-10 font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>SIGN UP</button>
+              <button className='text-2xl text-white rounded-lg pt-2 pb-2 mt-10 font-bold bg-black'>LOGIN</button>
               </form>
+              <div className='mt-10'>
+                <h2>Don't have an account?</h2>
+                <h2 className='mt-2 text-blue-500 text-1xl font-bold'>CREATE ACCOUNT</h2>
+              </div>
           </div>
+        </div>   
         </div>
       </div>
     </div>
   );
 };
 
-export default Page2Content;
+export default Login;
