@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginImage from '../Components/LoginImage';
+import { Link } from 'react-router-dom';
 
 const Page2Content = () => {
   return (
@@ -43,9 +44,11 @@ const Page2Content = () => {
               />
               <button className='text-2xl text-white rounded-lg pt-2 pb-2 mt-10 font-bold bg-black'>LOGIN</button>
               </form>
-              <div className='mt-10'>
+              <div className='flex justify-center items-center mt-10'>
                 <h2>Don't have an account?</h2>
-                <h2 className='text-blue-500 text-1xl bold'>CREATE ACCOUNT</h2>
+              </div>
+              <div className='flex justify-center items-center '>
+              <h2 className=' text-blue-500 text-1xl bold'><Link to="/account">CREATE ACCOUNT</Link></h2>
               </div>
           </div>
         </div>   

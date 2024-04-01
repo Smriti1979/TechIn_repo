@@ -1,14 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import Login from './Pages/Login';
 import CreateAccount from './Pages/CreateAccount';
 
-
 function App() {
   return (
-    <div className="App">
-      <CreateAccount/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route index element= {<Login/>}/>
+        <Route path= "/CreateAccount" element={<CreateAccount/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
